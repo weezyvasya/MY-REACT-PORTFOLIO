@@ -1,0 +1,1 @@
+export const projectsList = [{name: 'NAME1'},{name: 'NAME2'},{name: 'NAME3'}]

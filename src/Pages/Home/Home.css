@@ -1,0 +1,12 @@
+.container{
+    width: 1500px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-text{
+    text-align: center;
+}
