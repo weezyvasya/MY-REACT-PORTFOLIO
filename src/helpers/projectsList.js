@@ -1,1 +1,1 @@
-export const projectsList = [{name: 'NAME1'},{name: 'NAME2'},{name: 'NAME3'}]
+export const projectsList = [{name: 'NAME1', description: 'UHBHBHBHJBHNHKBKJNHBVGCVHBVGV'},{name: 'NAME2', description: 'UHBHBHBHJBHNHKBKJNHBVGCVHBVGV'},{name: 'NAME3', description: 'UHBHBHBHJBHNHKBKJNHBVGCVHBVGV'}]
