@@ -1,8 +1,36 @@
-.footer{
+/* .footer{
     width: 100vw;
 }
 .footer-main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
+.footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 2rem 0;
+    margin-top: auto;
+  }
+  
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 600px) {
+    .footer-main {
+      flex-direction: column;
+      gap: 1rem;
+      text-align: center;
+    }
+  }
+  .logo {
+    height: 50px;
+    width: auto;
+  }

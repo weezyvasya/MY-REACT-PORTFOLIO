@@ -1,4 +1,4 @@
-.container{
+/* .container{
     width: 1500px;
 }
 .main{
@@ -9,4 +9,52 @@
 }
 .main-text{
     text-align: center;
+} */
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=1800&auto=format') center/cover no-repeat;
+  filter: blur(8px) brightness(0.6);
+  z-index: -1;
+}
+
+.home-content {
+  background-color: rgba(255, 255, 255, 0.85); /* Для светлой темы */
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 800px;
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(2px);
+}
+
+[data-theme="dark"] .home-content {
+  background-color: rgba(33, 37, 41, 0.85); /* Для темной темы */
+}
+
+.home-header {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.home-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: var(--primary-color)
 }

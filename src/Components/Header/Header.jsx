@@ -13,7 +13,7 @@ function Header() {
       <header className="header">
         <div className="container">
           <div className="header-main">
-            <img className="logo" src={logo} alt="logo" />
+            <img className="logo" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&auto=format" alt="Code Logo" />
             <ul>
               <li style={{ display: "inline", marginLeft: "10px" }}>
                 <NavLink className={({isActive}) => isActive ? 'active-link' : 'link'  } to={"/"}>
