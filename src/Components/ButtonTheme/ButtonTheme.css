@@ -5,7 +5,7 @@
     display: block;
     width: 60px;
     height: 30px;
-    background-color: darkblue;
+    background-color: var(--primary-color);
     border-radius: 30px;
     cursor: pointer;
     position: relative;
@@ -34,7 +34,7 @@
 }
 
 #theme-toggle:checked + .toggle {
-    background-color: green;
+    background-color: var(--secondary-color);
 } 
 
 #theme-toggle:checked + .toggle:before  {

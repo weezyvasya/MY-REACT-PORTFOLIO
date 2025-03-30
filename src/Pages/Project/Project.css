@@ -1,0 +1,238 @@
+.project-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: var(--primary-color);
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Шапка проекта */
+  .project-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-title {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  .project-subtitle {
+    font-size: 20px;
+    color: var(--primary-color);
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Основной контент */
+  .project-content {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+  }
+  
+  .project-image-wrapper {
+    flex: 1;
+    min-width: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  
+  .project-main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  
+  .project-main-image:hover {
+    transform: scale(1.03);
+  }
+  
+  .project-details {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+  /* Секции с информацией */
+  .project-section {
+    margin-bottom: 10px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--secondary-color);
+  }
+  
+  .section-text {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--primary-color);
+    opacity: 0.95;
+    margin-bottom: 15px;
+  }
+  
+  /* Список возможностей */
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .feature-item {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 17px;
+    padding-left: 25px;
+    position: relative;
+  }
+  
+  .feature-item::before {
+    content: '•';
+    color: var(--secondary-color);
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+  
+  /* Технологии */
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .tech-badge {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .tech-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Кнопки */
+  .project-links {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .project-link {
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .github-link {
+    background-color: #24292e;
+    color: white;
+  }
+  
+  .github-link:hover {
+    background-color: #363636;
+    transform: translateY(-2px);
+  }
+  
+  .demo-link {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .demo-link:hover {
+    background-color: #25a35a;
+    transform: translateY(-2px);
+  }
+  
+  /* Адаптация для мобильных */
+  @media (max-width: 768px) {
+    .project-content {
+      flex-direction: column;
+      gap: 40px;
+    }
+    
+    .project-title {
+      font-size: 32px;
+    }
+    
+    .project-subtitle {
+      font-size: 18px;
+    }
+    
+    .section-title {
+      font-size: 24px;
+    }
+    
+    .project-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .project-link {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project-page {
+      padding: 30px 15px;
+    }
+    
+    .project-title {
+      font-size: 28px;
+    }
+    
+    .section-text, .feature-item {
+      font-size: 16px;
+    }
+    
+    .tech-badge {
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+  }
+  

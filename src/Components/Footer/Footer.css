@@ -9,13 +9,12 @@
 .footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
-    padding: 2rem 0;
-    margin-top: auto;
+    padding: 10px;
   }
   
   .footer-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   
@@ -30,7 +29,8 @@
       text-align: center;
     }
   }
-  .logo {
+  /* .logo {
     height: 50px;
     width: auto;
-  }
+    
+  } */

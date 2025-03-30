@@ -9,7 +9,7 @@
 
   #root {
     /* min-height: 100vh; */
-    --primary-color: #3498db;
+  --primary-color: #3498db;
   --secondary-color: #2ecc71;
   --text-color: #333;
   --bg-color: #f9f9f9;
@@ -60,7 +60,6 @@ body {
   }
   .main {
     flex: 1;
-    padding: 2rem 0;
   }
 
 .conteiner {
@@ -79,10 +78,7 @@ a {
   a:hover {
     color: var(--link-hover);
   }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+ 
   .home-container {
     background: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?w=800&auto=format') center/cover;
   }
