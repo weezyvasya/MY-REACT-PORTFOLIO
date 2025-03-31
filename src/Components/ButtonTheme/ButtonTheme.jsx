@@ -1,34 +1,29 @@
 import "./ButtonTheme.css";
-import React from "react";
-import { useLocalStorage } from "../../Utils/UseLocalStorage";
-import { useEffect } from "react";
+import { useTheme } from "../ThemeContext/ThemeContext";
+
 
 
 function ButtonTheme() {
+  const {toggleTheme} = useTheme
 
-const [theme, setTheme] = useLocalStorage('theme', 'light')  
+// const [theme, setTheme] = useLocalStorage('theme', 'light')  
 // const ref = useRef(null)
 
 
 
-  const toggleTheme = () => {
-     setTheme((prev)=> prev === 'light' ? 'dark' : 'light')
-  };
+  // const toggleTheme = () => {
+  //    setTheme((prev)=> prev === 'light' ? 'dark' : 'light')
+  // };
 
-  useEffect(()=> {
-    document.body.dataset.theme = theme
-    // return () => {} // UnMount
-  }, [theme]) // Mount / Update
+  // useEffect(()=> {
+  //   document.body.dataset.theme = theme
+  //   // return () => {} // UnMount
+  // }, [theme]) // Mount / Update
 
-
-
-
-
-  
   return (
     <>
      <div className="parent">
-      <input type="checkbox" id="theme-toggle" onClick={toggleTheme}/>
+      <input type="checkbox" id="theme-toggle" onChange={toggleTheme}/>
       <label className="toggle"></label>
      </div>
     </>

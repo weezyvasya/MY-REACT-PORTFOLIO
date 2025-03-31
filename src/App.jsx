@@ -5,20 +5,23 @@ import Footer from "./Components/Footer/Footer";
 import Content from "./Components/Content/Content";
 import ScrollToTop from "./Utils/ScrollToTop";
 import ButtonTheme from "./Components/ButtonTheme/ButtonTheme";
+import { ThemeProvider } from "./Components/ThemeContext/ThemeContext";
 
 function App() {
   return (
     <>
-      <div className="app"> 
-        <BrowserRouter>
-          <Header /> 
-          <ScrollToTop />
-          <div className="main">
-            <Content />
-          </div>
-          <Footer />
-        </BrowserRouter>
-      </div>
+      <ThemeProvider>
+        <div className="app">
+          <BrowserRouter>
+            <Header />
+            <ScrollToTop />
+            <div className="main">
+              <Content />
+            </div>
+            <Footer />
+          </BrowserRouter>
+        </div>
+      </ThemeProvider>
     </>
   );
 }
