@@ -1,24 +1,23 @@
 import "./ButtonTheme.css";
 import { useTheme } from "../ThemeContext/ThemeContext";
+import { useEffect } from "react";
+import { useLocalStorage } from "../../Utils/UseLocalStorage";
 
 
 
 function ButtonTheme() {
-  const {toggleTheme} = useTheme
-
-// const [theme, setTheme] = useLocalStorage('theme', 'light')  
-// const ref = useRef(null)
+  const [theme, setTheme] = useTheme() // [value, setValue]
 
 
 
-  // const toggleTheme = () => {
-  //    setTheme((prev)=> prev === 'light' ? 'dark' : 'light')
-  // };
+  const toggleTheme = () => {
+     setTheme((prev)=> prev === 'light' ? 'dark' : 'light')
+  };
 
-  // useEffect(()=> {
-  //   document.body.dataset.theme = theme
-  //   // return () => {} // UnMount
-  // }, [theme]) // Mount / Update
+  useEffect(()=> {
+    document.body.dataset.theme = theme
+    // return () => {} // UnMount
+  }, [theme]) // Mount / Update
 
   return (
     <>

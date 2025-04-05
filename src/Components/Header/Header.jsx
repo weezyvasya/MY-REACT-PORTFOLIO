@@ -17,17 +17,17 @@ function Header() {
             <ul>
               <li style={{ display: "inline", marginLeft: "10px" }}>
                 <NavLink className={({isActive}) => isActive ? 'active-link' : 'link'  } to={"/"}>
-                  home
+                  HOME
                 </NavLink>
               </li>
               <li style={{ display: "inline", marginLeft: "10px" }}>
                 <NavLink className={({isActive}) => isActive ? 'active-link' : 'link'  } to={"/projects"}>
-                  projects
+                  PROJECTS
                 </NavLink>
               </li>
               <li style={{ display: "inline", marginLeft: "10px" }}>
                 <NavLink className={({isActive}) => isActive ? 'active-link' : 'link'  } to={"/contacts"}>
-                  contacts
+                  CONTACTS
                 </NavLink>
               </li>
             </ul>
