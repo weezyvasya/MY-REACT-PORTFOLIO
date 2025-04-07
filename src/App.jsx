@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-import { TestRef } from "./Components/TestRef";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Content from "./Components/Content/Content";
@@ -16,7 +15,6 @@ function App() {
             {/* <scrollToTop /> */}
             <div className="main">
               <Content />
-              <TestRef />
             </div>
             <Footer />
           </BrowserRouter>
