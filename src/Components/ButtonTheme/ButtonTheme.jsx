@@ -1,7 +1,7 @@
 import "./ButtonTheme.css";
 import { useTheme } from "../ThemeContext/ThemeContext";
 import { useEffect } from "react";
-import { useLocalStorage } from "../../Utils/UseLocalStorage";
+import { useLocalStorage } from "../../utils/UseLocalStorage";
 
 
 

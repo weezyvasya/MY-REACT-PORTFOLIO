@@ -7,7 +7,7 @@ function Contacts() {
     <div className="contacts-container">
       <h1 className="contacts-title">Контакты</h1>
       <div className="contacts-content">
-          {contactsData.map((contact) => <ContactsCard contact={contact}/>)}
+          {contactsData.map((contact) => <ContactsCard key={contact.title} contact={contact}/>)}
       </div>
     </div>
   );

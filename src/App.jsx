@@ -1,11 +1,10 @@
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
-
+import { TestRef } from "./Components/TestRef";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Content from "./Components/Content/Content";
-import ScrollToTop from "./Utils/ScrollToTop";
-import ButtonTheme from "./Components/ButtonTheme/ButtonTheme";
 import { ThemeProvider } from "./Components/ThemeContext/ThemeContext";
+// import {scrollToTop} from "./utils/scrollToTop"
 
 function App() {
   return (
@@ -14,9 +13,10 @@ function App() {
         <div className="app">
           <BrowserRouter>
             <Header />
-            <ScrollToTop />
+            {/* <scrollToTop /> */}
             <div className="main">
               <Content />
+              <TestRef />
             </div>
             <Footer />
           </BrowserRouter>
